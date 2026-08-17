@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC 111: Mechanical Engineering Science I | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering engineering equations cleanly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">National Diploma (ND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../nd-index.html">ND Curriculum</a>
+            <a href="../../hnd/hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Chapters -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MEC 111 Outline</h3>
+                <span class="course-code">Semester 1</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Statics & Force Systems</a></li>
+                    <li><a href="#module-2">2. Moments & Couples</a></li>
+                    <li><a href="#module-3">3. Kinematics & Motion</a></li>
+                    <li><a href="#module-4">4. Work, Energy & Power</a></li>
+                    <li><a href="#module-5">5. Friction Applications</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mechanical Engineering • ND Level</span>
+                    <h1>MEC 111: Mechanical Engineering Science I</h1>
+                    <p class="subtitle">Module 1: Statics & Concurrent Force Systems</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module Content Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 Introduction to Concurrent Force Systems</h2>
+                    <p>
+                        In mechanical statics, a force system is categorized by the lines of action of the constituent forces. A <strong>concurrent force system</strong> consists of two or more forces whose lines of action intersect at a single common point.
+                    </p>
+
+                    <h3>Fundamental Principles</h3>
+                    <ul>
+                        <li><strong>Scalar Quantity:</strong> A physical magnitude without direction (e.g., mass, density).</li>
+                        <li><strong>Vector Quantity:</strong> A physical property possessing both magnitude and direction (e.g., force, velocity).</li>
+                        <li><strong>Line of Action:</strong> The infinite line along which a force vector acts.</li>
+                    </ul>
+
+                    <!-- Formula Highlight Box -->
+                    <div class="formula-card">
+                        <div class="formula-title">Resultant Force ($R$) of Two Concurrent Forces</div>
+                        <p class="formula-display">
+                            $$R = \sqrt{P^2 + Q^2 + 2PQ \cos(\theta)}$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $P$ and $Q$ represent force vectors acting at angle $\theta$.
+                        </p>
+                    </div>
+
+                    <h3>Conditions for Static Equilibrium</h3>
+                    <p>
+                        For a rigid body acting under coplanar, concurrent forces to remain in complete equilibrium, the vector sum of all acting forces must equate to zero:
+                    </p>
+                    
+                    <div class="equation-block">
+                        $$\sum F_x = 0 \quad \text{and} \quad \sum F_y = 0$$
+                    </div>
+
+                    <p>
+                        Graphically, this is verified using the <em>Polygon of Forces</em> rule: if a system of forces in equilibrium is drawn head-to-tail to scale, it forms a closed geometric polygon.
+                    </p>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="../../index.html" class="btn btn-secondary">← Back to Portal</a>
+                    <a href="#module-2" class="btn btn-primary">Next Module: Moments & Couples →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
