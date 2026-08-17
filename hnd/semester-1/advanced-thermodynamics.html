@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC 311: Advanced Thermodynamics & Heat Transfer | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering engineering equations cleanly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">Higher National Diploma (HND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../../nd/nd-index.html">ND Curriculum</a>
+            <a href="../hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MEC 311 Outline</h3>
+                <span class="course-code">Semester 1</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Rankine Vapor Cycles</a></li>
+                    <li><a href="#module-2">2. Brayton Gas Cycles</a></li>
+                    <li><a href="#module-3">3. Fourier Conduction Law</a></li>
+                    <li><a href="#module-4">4. Convection & Radiation</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mechanical Engineering • HND Level</span>
+                    <h1>MEC 311: Advanced Thermodynamics & Heat Transfer</h1>
+                    <p class="subtitle">Module 1: Vapor Power Cycles and Conduction Heat Transfer</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 The Ideal Rankine Vapor Power Cycle</h2>
+                    <p>
+                        The Rankine cycle is the fundamental thermodynamic model for steam power plants. Unlike the theoretical Carnot cycle, the Rankine cycle avoids superheated compression by condensing steam completely into liquid before pumping.
+                    </p>
+
+                    <h3>Thermodynamic Processes in the Rankine Cycle</h3>
+                    <ul>
+                        <li><strong>Process 1-2 (Isentropic Compression):</strong> Liquid condensate is pumped to boiler pressure ($W_{\text{pump}} = v_1(P_2 - P_1)$).</li>
+                        <li><strong>Process 2-3 (Constant Pressure Heat Addition):</strong> Water is heated to superheated steam in the boiler ($Q_{\text{in}} = h_3 - h_2$).</li>
+                        <li><strong>Process 3-4 (Isentropic Expansion):</strong> Steam expands through the turbine to generate work ($W_{\text{turbine}} = h_3 - h_4$).</li>
+                        <li><strong>Process 4-1 (Constant Pressure Heat Rejection):</strong> Exhaust steam condenses back to liquid in the condenser ($Q_{\text{out}} = h_4 - h_1$).</li>
+                    </ul>
+
+                    <!-- Formula Card -->
+                    <div class="formula-card">
+                        <div class="formula-title">Rankine Thermal Efficiency ($\eta_{\text{th}}$)</div>
+                        <p class="formula-display">
+                            $$\eta_{\text{th}} = \frac{W_{\text{net}}}{Q_{\text{in}}} = \frac{(h_3 - h_4) - (h_2 - h_1)}{h_3 - h_2}$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $h$ represents specific enthalpy ($\text{kJ/kg}$) at each state point across the system.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Module 3 Section -->
+                <section id="module-3" class="lecture-section">
+                    <h2>1.2 Fourier's Law of Heat Conduction</h2>
+                    <p>
+                        Conduction is the mode of thermal energy transfer through a solid medium via molecular vibration and free electron transport.
+                    </p>
+
+                    <div class="equation-block">
+                        $$\dot{Q}_{\text{cond}} = -k A \frac{dT}{dx}$$
+                    </div>
+                    <p class="formula-caption" style="text-align: center;">
+                        Where $k$ is thermal conductivity ($\text{W/m}\cdot\text{K}$), $A$ is cross-sectional area ($\text{m}^2$), and $\frac{dT}{dx}$ is the temperature gradient.
+                    </p>
+
+                    <h3>One-Dimensional Steady-State Plane Wall Heat Flow</h3>
+                    <div class="formula-card">
+                        <div class="formula-title">Thermal Resistance Concept</div>
+                        <p class="formula-display">
+                            $$\dot{Q} = \frac{T_{s,1} - T_{s,2}}{R_{\text{cond}}} \quad \text{where} \quad R_{\text{cond}} = \frac{L}{kA}$$
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="../hnd-index.html" class="btn btn-secondary">← Back to HND Directory</a>
+                    <a href="fluid-mechanics-2.html" class="btn btn-primary">Next: MEC 312 Fluid Mechanics II →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
