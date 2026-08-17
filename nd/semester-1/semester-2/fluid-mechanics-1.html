@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC 122: Fluid Mechanics I | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">National Diploma (ND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../nd-index.html">ND Curriculum</a>
+            <a href="../../hnd/hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MEC 122 Outline</h3>
+                <span class="course-code">Semester 2</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Fluid Properties & Density</a></li>
+                    <li><a href="#module-2">2. Hydrostatics & Pascal's Law</a></li>
+                    <li><a href="#module-3">3. Fluid Dynamics & Continuity</a></li>
+                    <li><a href="#module-4">4. Bernoulli's Equation</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mechanical Engineering • ND Level</span>
+                    <h1>MEC 122: Fluid Mechanics I</h1>
+                    <p class="subtitle">Module 1: Fluid Properties, Hydrostatic Pressure, and Flow Continuity</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 Fundamental Properties of Fluids</h2>
+                    <p>
+                        A fluid is a substance that deforms continuously under the application of shear stress, no matter how small. Fluids encompass both liquids and gases.
+                    </p>
+
+                    <h3>Key Physical Properties</h3>
+                    <ul>
+                        <li><strong>Mass Density ($\rho$):</strong> Mass per unit volume ($\text{kg/m}^3$). For pure water at $4^\circ\text{C}$, $\rho = 1000 \, \text{kg/m}^3$.</li>
+                        <li><strong>Specific Weight ($\gamma$):</strong> Weight force exerted per unit volume ($\text{N/m}^3$), defined as $\gamma = \rho g$.</li>
+                        <li><strong>Dynamic Viscosity ($\mu$):</strong> Internal fluid resistance to flow shear ($\text{Pa}\cdot\text{s}$ or $\text{N}\cdot\text{s/m}^2$).</li>
+                        <li><strong>Kinematic Viscosity ($\nu$):</strong> Ratio of dynamic viscosity to density ($\text{m}^2/\text{s}$), defined as $\nu = \frac{\mu}{\rho}$.</li>
+                    </ul>
+
+                    <!-- Formula Card -->
+                    <div class="formula-card">
+                        <div class="formula-title">Newton's Law of Viscosity</div>
+                        <p class="formula-display">
+                            $$\tau = \mu \frac{du}{dy}$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $\tau$ is shear stress ($\text{N/m}^2$) and $\frac{du}{dy}$ is velocity gradient perpendicular to flow direction.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Module 2 Section -->
+                <section id="module-2" class="lecture-section">
+                    <h2>1.2 Hydrostatic Pressure & Pascal's Law</h2>
+                    <p>
+                        Hydrostatics studies fluid equilibrium at rest. Pressure exerted at any point in a static fluid acts equally in all directions.
+                    </p>
+
+                    <div class="formula-card">
+                        <div class="formula-title">Hydrostatic Equation</div>
+                        <p class="formula-display">
+                            $$P = P_0 + \rho g h$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $P_0$ is surface atmospheric pressure, $\rho$ is fluid density, $g$ is gravitational acceleration ($9.81 \, \text{m/s}^2$), and $h$ is fluid column depth ($\text{m}$).
+                        </p>
+                    </div>
+
+                    <h3>Continuity Equation for Incompressible Flow</h3>
+                    <div class="equation-block">
+                        $$Q = A_1 V_1 = A_2 V_2 = \text{Constant}$$
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="thermodynamics-1.html" class="btn btn-secondary">← Previous: MEC 121</a>
+                    <a href="../nd-index.html" class="btn btn-primary">ND Syllabus Directory →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
