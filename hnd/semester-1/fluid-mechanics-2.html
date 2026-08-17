@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC 312: Fluid Mechanics II & Turbo-Machinery | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">Higher National Diploma (HND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../../nd/nd-index.html">ND Curriculum</a>
+            <a href="../hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MEC 312 Outline</h3>
+                <span class="course-code">Semester 1</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Boundary Layer Theory</a></li>
+                    <li><a href="#module-2">2. Dimensional Analysis</a></li>
+                    <li><a href="#module-3">3. Euler Turbine Equation</a></li>
+                    <li><a href="#module-4">4. Centrifugal Pumps & Turbines</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mechanical Engineering • HND Level</span>
+                    <h1>MEC 312: Fluid Mechanics II & Turbo-Machinery</h1>
+                    <p class="subtitle">Module 1: Boundary Layer Behavior, Dimensional Analysis, and Hydrodynamics</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 Boundary Layer Concept & Viscous Drag</h2>
+                    <p>
+                        When a real fluid flows past a solid boundary, no-slip boundary conditions dictate that fluid particles adhering to the wall remain stationary. A thin region adjacent to the surface develops where velocity gradients and shear forces predominate: the boundary layer ($\delta$).
+                    </p>
+
+                    <h3>Laminar to Turbulent Transition</h3>
+                    <p>
+                        Flow regime stability over a flat plate is governed by the local Reynolds number ($Re_x$). Transition typically initiates at critical Reynolds numbers:
+                    </p>
+
+                    <div class="equation-block">
+                        $$Re_{x,\text{crit}} = \frac{\rho U_{\infty} x}{\mu} \approx 5 \times 10^5$$
+                    </div>
+
+                    <!-- Formula Card -->
+                    <div class="formula-card">
+                        <div class="formula-title">Prandtl Boundary Layer Thickness (Laminar Flow)</div>
+                        <p class="formula-display">
+                            $$\delta \approx \frac{5.0 x}{\sqrt{Re_x}}$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $x$ is the distance from the leading edge and $Re_x$ is the local Reynolds number.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Module 3 Section -->
+                <section id="module-3" class="lecture-section">
+                    <h2>1.2 Euler's Turbo-Machinery Equation</h2>
+                    <p>
+                        Euler's turbine equation represents the fundamental angular momentum balance for all dynamic fluid machinery, linking fluid velocity vectors at impeller inlet and outlet to shaft torque and power.
+                    </p>
+
+                    <div class="formula-card">
+                        <div class="formula-title">Specific Work Output / Input ($w$)</div>
+                        <p class="formula-display">
+                            $$w = U_1 V_{w1} - U_2 V_{w2}$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $U$ is blade tangential speed ($\text{m/s}$) and $V_w$ is the whirl component of fluid velocity ($\text{m/s}$) at inlet (1) and exit (2).
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="advanced-thermodynamics.html" class="btn btn-secondary">← Previous: MEC 311</a>
+                    <a href="../hnd-index.html" class="btn btn-primary">HND Syllabus Directory →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
