@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTH 311: Advanced Engineering Mathematics | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">Higher National Diploma (HND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../../nd/nd-index.html">ND Curriculum</a>
+            <a href="../hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MTH 311 Outline</h3>
+                <span class="course-code">Semester 1</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Differential Equations</a></li>
+                    <li><a href="#module-2">2. Laplace Transforms</a></li>
+                    <li><a href="#module-3">3. Fourier Series</a></li>
+                    <li><a href="#module-4">4. Vector Calculus</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mathematics • HND Level</span>
+                    <h1>MTH 311: Advanced Engineering Mathematics</h1>
+                    <p class="subtitle">Module 1: Second-Order Differential Equations, Laplace Transforms, and Fourier Analysis</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 Second-Order Linear Homogeneous ODEs</h2>
+                    <p>
+                        Second-order ordinary differential equations (ODEs) model mechanical vibration systems, spring-mass-damper dynamics, and electrical resonance circuits.
+                    </p>
+
+                    <div class="equation-block">
+                        $$a \frac{d^2 y}{d x^2} + b \frac{d y}{d x} + c y = 0$$
+                    </div>
+
+                    <!-- Formula Card -->
+                    <div class="formula-card">
+                        <div class="formula-title">Auxiliary Equation & General Solutions</div>
+                        <p class="formula-display">
+                            $$a m^2 + b m + c = 0$$
+                        </p>
+                        <p class="formula-caption">
+                            Depending on the roots ($m_1, m_2$), the complementary function ($y_c$) takes one of three forms:
+                        </p>
+                        <ul>
+                            <li><strong>Real & Distinct Roots ($m_1 \neq m_2$):</strong> $y_c = C_1 e^{m_1 x} + C_2 e^{m_2 x}$</li>
+                            <li><strong>Real & Equal Roots ($m_1 = m_2 = m$):</strong> $y_c = (C_1 + C_2 x) e^{m x}$</li>
+                            <li><strong>Complex Conjugate Roots ($m = \alpha \pm i\beta$):</strong> $y_c = e^{\alpha x} (C_1 \cos \beta x + C_2 \sin \beta x)$</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Module 2 Section -->
+                <section id="module-2" class="lecture-section">
+                    <h2>1.2 The Laplace Transform</h2>
+                    <p>
+                        The Laplace transform maps time-domain functions $f(t)$ into complex frequency-domain functions $F(s)$, turning differential equations into easily solved algebraic expressions.
+                    </p>
+
+                    <div class="formula-card">
+                        <div class="formula-title">Definition of Laplace Transform</div>
+                        <p class="formula-display">
+                            $$\mathcal{L}\{f(t)\} = F(s) = \int_{0}^{\infty} e^{-st} f(t) \, dt$$
+                        </p>
+                    </div>
+
+                    <h3>Standard Transform Pairs</h3>
+                    <div class="equation-block">
+                        $$\mathcal{L}\{1\} = \frac{1}{s}, \quad \mathcal{L}\{e^{at}\} = \frac{1}{s - a}, \quad \mathcal{L}\{\sin(\omega t)\} = \frac{\omega}{s^2 + \omega^2}$$
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="strength-of-materials-2.html" class="btn btn-secondary">← Previous: MEC 313</a>
+                    <a href="../hnd-index.html" class="btn btn-primary">HND Syllabus Directory →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
