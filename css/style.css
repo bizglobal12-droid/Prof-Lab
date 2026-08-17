@@ -1,0 +1,217 @@
+/* ==========================================================================
+   PROFESSOR LIBRARY - GLOBAL BASE STYLES
+   File: css/style.css
+   ========================================================================== */
+
+/* 1. CSS Custom Properties / Design Tokens */
+:root {
+    /* Color Palette */
+    --bg-primary: #fdfbf7;       /* Warm parchment background */
+    --bg-surface: #ffffff;       /* Pure white for reading cards */
+    --bg-sidebar: #f4efe6;       /* Slightly deeper tone for sidebar */
+    --text-main: #1e293b;        /* Deep slate body text */
+    --text-muted: #64748b;       /* Muted gray for captions & metadata */
+    --accent-primary: #1e3a8a;   /* Oxford Blue */
+    --accent-secondary: #7c2d12; /* Deep Mahogany */
+    --border-color: #e2e8f0;     /* Soft dividing lines */
+    --border-dark: #cbd5e1;
+
+    /* Typography */
+    --font-heading: "Georgia", "Merriweather", serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-mono: "Fira Code", "Consolas", monospace;
+
+    /* Spacing & Layout */
+    --max-content-width: 820px;
+    --sidebar-width: 280px;
+    --nav-height: 60px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Global Resets & Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+}
+
+h1 { font-size: 2.25rem; font-weight: 700; }
+h2 { font-size: 1.65rem; font-weight: 700; margin-top: 2rem; }
+h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; }
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-secondary);
+}
+
+ul, ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* 3. Navigation Bar Layout */
+.top-nav {
+    height: var(--nav-height);
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.nav-divider {
+    color: var(--border-dark);
+}
+
+.level-tag {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* 4. Core Reader App Container Grid */
+.reader-container {
+    display: flex;
+    min-height: calc(100vh - var(--nav-height));
+}
+
+/* Sidebar Layout */
+.chapter-sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+    padding: 1.5rem 1rem;
+    position: sticky;
+    top: var(--nav-height);
+    height: calc(100vh - var(--nav-height));
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+/* Reading Canvas Layout */
+.reading-canvas {
+    flex-grow: 1;
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.lecture-content {
+    width: 100%;
+    max-width: var(--max-content-width);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1a3070;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border-dark);
+}
+
+.btn-secondary:hover {
+    background-color: #f1f5f9;
+}
+
+/* Responsive Rules */
+@media (max-width: 850px) {
+    .reader-container {
+        flex-direction: column;
+    }
+    
+    .chapter-sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .level-tag {
+        display: none;
+    }
+}
