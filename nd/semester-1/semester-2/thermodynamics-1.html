@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC 121: Thermodynamics I | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">National Diploma (ND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../nd-index.html">ND Curriculum</a>
+            <a href="../../hnd/hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MEC 121 Outline</h3>
+                <span class="course-code">Semester 2</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. First Law of Thermodynamics</a></li>
+                    <li><a href="#module-2">2. Non-Flow Energy Equation</a></li>
+                    <li><a href="#module-3">3. Steady Flow Energy Equation</a></li>
+                    <li><a href="#module-4">4. Ideal Gas Laws & Processes</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mechanical Engineering • ND Level</span>
+                    <h1>MEC 121: Thermodynamics I</h1>
+                    <p class="subtitle">Module 1: First Law Foundations, Non-Flow and Steady-Flow Energy Equations</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 First Law for a Closed System (NFEE)</h2>
+                    <p>
+                        The First Law of Thermodynamics expresses the conservation of energy principle. For a closed system undergoing a thermodynamic cycle or process, net heat interaction equals net work done plus internal energy change.
+                    </p>
+
+                    <!-- Formula Card -->
+                    <div class="formula-card">
+                        <div class="formula-title">Non-Flow Energy Equation (NFEE)</div>
+                        <p class="formula-display">
+                            $$Q = \Delta U + W$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $Q$ is heat added to the system ($\text{kJ}$), $\Delta U$ is internal energy change ($U_2 - U_1$), and $W$ is boundary work done ($\text{kJ}$).
+                        </p>
+                    </div>
+
+                    <h3>Polytropic Process Boundary Work</h3>
+                    <div class="equation-block">
+                        $$W = \int_{1}^{2} P \, dV = \frac{P_1 V_1 - P_2 V_2}{n - 1}$$
+                    </div>
+                </section>
+
+                <!-- Module 3 Section -->
+                <section id="module-3" class="lecture-section">
+                    <h2>1.2 Steady Flow Energy Equation (SFEE)</h2>
+                    <p>
+                        For open control volumes (turbines, pumps, nozzles, compressors) where mass crosses system boundaries at a steady rate:
+                    </p>
+
+                    <div class="formula-card">
+                        <div class="formula-title">Steady Flow Conservation Formula</div>
+                        <p class="formula-display">
+                            $$\dot{Q} - \dot{W} = \dot{m} \left[ (h_2 - h_1) + \frac{V_2^2 - V_1^2}{2000} + \frac{g(z_2 - z_1)}{1000} \right]$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $h$ is specific enthalpy ($\text{kJ/kg}$), $V$ is fluid velocity ($\text{m/s}$), and $z$ is elevation ($\text{m}$).
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="../nd-index.html" class="btn btn-secondary">← Back to ND Directory</a>
+                    <a href="fluid-mechanics-1.html" class="btn btn-primary">Next: MEC 122 Fluid Mechanics I →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
