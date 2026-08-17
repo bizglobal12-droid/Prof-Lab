@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC 313: Strength of Materials II | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">Higher National Diploma (HND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../../nd/nd-index.html">ND Curriculum</a>
+            <a href="../hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MEC 313 Outline</h3>
+                <span class="course-code">Semester 1</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Thick Cylinders & Shells</a></li>
+                    <li><a href="#module-2">2. Unsymmetrical Bending</a></li>
+                    <li><a href="#module-3">3. Strain Energy & Castigliano</a></li>
+                    <li><a href="#module-4">4. Stresses in Rotating Discs</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mechanical Engineering • HND Level</span>
+                    <h1>MEC 313: Strength of Materials II</h1>
+                    <p class="subtitle">Module 1: Thick Cylinders, Unsymmetrical Bending, and Strain Energy Analysis</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 Thick Cylinders & Lamé's Equations</h2>
+                    <p>
+                        A cylinder is classified as thick when its wall thickness ($t$) exceeds $\frac{1}{20}\text{th}$ of its internal diameter ($d_i$). Unlike thin cylinders, radial stress ($\sigma_r$) cannot be neglected and varies non-linearly across the wall thickness alongside hoop stress ($\sigma_c$).
+                    </p>
+
+                    <!-- Formula Card -->
+                    <div class="formula-card">
+                        <div class="formula-title">Lamé's Stress Equations</div>
+                        <p class="formula-display">
+                            $$\text{Radial Stress: } \sigma_r = \frac{B}{r^2} - A$$
+                        </p>
+                        <p class="formula-display">
+                            $$\text{Hoop / Circumferential Stress: } \sigma_c = \frac{B}{r^2} + A$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $r$ is the variable radius at any point within the wall thickness, and $A$ and $B$ are Lamé constants determined by boundary pressure conditions at internal ($r_1$) and external ($r_2$) radii.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Module 3 Section -->
+                <section id="module-3" class="lecture-section">
+                    <h2>1.2 Strain Energy & Castigliano's Theorem</h2>
+                    <p>
+                        Strain energy ($U$) is the internal work done by external forces in deforming an elastic body.
+                    </p>
+
+                    <h3>Strain Energy in Direct Axially Loaded Members</h3>
+                    <div class="equation-block">
+                        $$U = \int \frac{P^2}{2AE} \, dx = \frac{P^2 L}{2AE}$$
+                    </div>
+
+                    <div class="formula-card">
+                        <div class="formula-title">Castigliano's First Theorem</div>
+                        <p class="formula-display">
+                            $$\delta_i = \frac{\partial U}{\partial P_i}$$
+                        </p>
+                        <p class="formula-caption">
+                            The partial derivative of total strain energy ($U$) with respect to an applied point load ($P_i$) equals the displacement ($\delta_i$) of the point of application along the load's line of action.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="fluid-mechanics-2.html" class="btn btn-secondary">← Previous: MEC 312</a>
+                    <a href="../hnd-index.html" class="btn btn-primary">HND Syllabus Directory →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
