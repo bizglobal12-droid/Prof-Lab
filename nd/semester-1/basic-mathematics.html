@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTH 111: Basic Mathematics I | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">National Diploma (ND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../nd-index.html">ND Curriculum</a>
+            <a href="../../hnd/hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MTH 111 Outline</h3>
+                <span class="course-code">Semester 1</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Algebra & Polynomials</a></li>
+                    <li><a href="#module-2">2. Partial Fractions</a></li>
+                    <li><a href="#module-3">3. Trigonometric Laws</a></li>
+                    <li><a href="#module-4">4. Coordinate Geometry</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mathematics • ND Level</span>
+                    <h1>MTH 111: Basic Mathematics I</h1>
+                    <p class="subtitle">Module 1: Algebra, Partial Fractions, Trigonometry, and Coordinate Geometry</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 Quadratic Equations & Polynomial Roots</h2>
+                    <p>
+                        Algebraic formulation underpins structural and thermodynamic equations across mechanical engineering. A quadratic equation in standard polynomial form is expressed as $ax^2 + bx + c = 0$.
+                    </p>
+
+                    <div class="formula-card">
+                        <div class="formula-title">Quadratic Formula & Discriminant ($\Delta$)</div>
+                        <p class="formula-display">
+                            $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+                        </p>
+                        <p class="formula-caption">
+                            The discriminant $\Delta = b^2 - 4ac$ dictates root characteristics: real and distinct ($\Delta > 0$), equal ($\Delta = 0$), or complex conjugate ($\Delta < 0$).
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Module 2 Section -->
+                <section id="module-2" class="lecture-section">
+                    <h2>1.2 Partial Fraction Decomposition</h2>
+                    <p>
+                        Partial fraction resolution simplifies complex rational expressions into integrable components—an essential technique for dynamic system analysis and Laplace transforms.
+                    </p>
+
+                    <h3>Distinct Linear Factors</h3>
+                    <div class="equation-block">
+                        $$\frac{P(x)}{(x - a)(x - b)} = \frac{A}{x - a} + \frac{B}{x - b}$$
+                    </div>
+                </section>
+
+                <!-- Module 3 Section -->
+                <section id="module-3" class="lecture-section">
+                    <h2>1.3 Trigonometric Identities & Vector Triangle Rules</h2>
+                    <p>
+                        Trigonometric rules resolve force vectors, linkage angles, and harmonic wave motions in mechanical design.
+                    </p>
+
+                    <div class="formula-card">
+                        <div class="formula-title">Sine & Cosine Laws for Oblique Triangles</div>
+                        <p class="formula-display">
+                            $$\text{Sine Law:} \quad \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$
+                        </p>
+                        <p class="formula-display">
+                            $$\text{Cosine Law:} \quad c^2 = a^2 + b^2 - 2ab \cos(C)$$
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="engineering-materials.html" class="btn btn-secondary">← Previous: MEC 114</a>
+                    <a href="../nd-index.html" class="btn btn-primary">ND Syllabus Directory →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
