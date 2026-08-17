@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC 114: Engineering Materials I | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering engineering equations cleanly -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">National Diploma (ND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../nd-index.html">ND Curriculum</a>
+            <a href="../../hnd/hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MEC 114 Outline</h3>
+                <span class="course-code">Semester 1</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Material Classification</a></li>
+                    <li><a href="#module-2">2. Mechanical Properties</a></li>
+                    <li><a href="#module-3">3. Ferrous Alloys</a></li>
+                    <li><a href="#module-4">4. Non-Ferrous Alloys</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mechanical Engineering • ND Level</span>
+                    <h1>MEC 114: Engineering Materials I</h1>
+                    <p class="subtitle">Module 1: Classification, Structure, and Mechanical Properties</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 Classification of Engineering Materials</h2>
+                    <p>
+                        Engineering materials are fundamental substances used in industrial manufacturing, structural fabrication, and machine component design. They are broadly categorized into four primary classes based on atomic structure and bonding:
+                    </p>
+
+                    <ul>
+                        <li><strong>Ferrous Metals:</strong> Iron-based metals containing carbon (e.g., plain carbon steels, cast iron, alloy steels).</li>
+                        <li><strong>Non-Ferrous Metals:</strong> Metals containing no deliberate iron additions (e.g., aluminum, copper, brass, bronze, titanium).</li>
+                        <li><strong>Polymers:</strong> Organic compounds formed by long-chain molecular monomers (e.g., thermoplastics, thermosets, elastomers).</li>
+                        <li><strong>Ceramics & Composites:</strong> Inorganic non-metallic solids (ceramics) or combinations of distinct material phases engineered for synergistic performance (composites).</li>
+                    </ul>
+                </section>
+
+                <!-- Module 2 Section -->
+                <section id="module-2" class="lecture-section">
+                    <h2>1.2 Key Mechanical Properties</h2>
+                    <p>
+                        The suitability of a material for a specific structural application is governed by its response to externally applied loads.
+                    </p>
+
+                    <h3>Tensile Testing & Hooke's Law</h3>
+                    <p>
+                        Within the elastic limit of a material, normal stress ($\sigma$) is directly proportional to linear strain ($\epsilon$).
+                    </p>
+
+                    <!-- Formula Card -->
+                    <div class="formula-card">
+                        <div class="formula-title">Young's Modulus of Elasticity ($E$)</div>
+                        <p class="formula-display">
+                            $$E = \frac{\sigma}{\epsilon} = \frac{F / A}{\Delta L / L_0}$$
+                        </p>
+                        <p class="formula-caption">
+                            Where $F$ is applied force (N), $A$ is cross-sectional area ($\text{m}^2$), $\Delta L$ is extension (m), and $L_0$ is original length (m).
+                        </p>
+                    </div>
+
+                    <div class="equation-block">
+                        $$\text{Ultimate Tensile Strength (UTS)} = \frac{\text{Maximum Force } (F_{\text{max}})}{\text{Original Area } (A_0)}$$
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="workshop-technology.html" class="btn btn-secondary">← Previous: MEC 113</a>
+                    <a href="basic-mathematics.html" class="btn btn-primary">Next: MTH 111 Basic Math →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
