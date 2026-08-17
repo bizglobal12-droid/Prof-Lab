@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEC 123: Technical Drawing II | Professor Library</title>
+    <!-- Relative paths to root assets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/library-theme.css">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="library-reader">
 
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <a href="../../index.html" class="brand-link">
+                <span class="library-icon">📜</span>
+                <span class="brand-title">Professor Library</span>
+            </a>
+            <span class="nav-divider">/</span>
+            <span class="level-tag">National Diploma (ND 1)</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Portal Home</a>
+            <a href="../nd-index.html">ND Curriculum</a>
+            <a href="../../hnd/hnd-index.html">HND Curriculum</a>
+        </nav>
+    </header>
+
+    <div class="reader-container">
+        <!-- Sidebar Navigation: Course Modules -->
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <h3>MEC 123 Outline</h3>
+                <span class="course-code">Semester 2</span>
+            </div>
+            <nav class="module-nav">
+                <ul>
+                    <li class="active"><a href="#module-1">1. Assembly Drawing Conventions</a></li>
+                    <li><a href="#module-2">2. Threaded Fasteners & Keys</a></li>
+                    <li><a href="#module-3">3. Limits, Fits & Tolerances</a></li>
+                    <li><a href="#module-4">4. Surface Texture & Finish Marks</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Reading Canvas -->
+        <main class="reading-canvas">
+            <article class="lecture-content">
+                <header class="lecture-header">
+                    <span class="meta-category">Mechanical Engineering • ND Level</span>
+                    <h1>MEC 123: Technical Drawing II</h1>
+                    <p class="subtitle">Module 1: Machine Assembly Conventions, Mechanical Fasteners, Limits and Fits</p>
+                </header>
+
+                <hr class="section-divider">
+
+                <!-- Module 1 Section -->
+                <section id="module-1" class="lecture-section">
+                    <h2>1.1 Machine Assembly Drawings & Bill of Materials</h2>
+                    <p>
+                        Assembly drawings illustrate the spatial arrangement and relative positioning of individual fabricated components within a complete engineering sub-assembly or machine unit.
+                    </p>
+
+                    <h3>Essential Components of an Assembly Layout</h3>
+                    <ul>
+                        <li><strong>Item Reference Numbers (Balloons):</strong> Circled numbers with leader lines pointing directly to each constituent part.</li>
+                        <li><strong>Bill of Materials (BOM / Part List):</strong> Itemized table listing item number, description, quantity, material specification, and part drawing reference.</li>
+                        <li><strong>Sectional Views:</strong> Cutaway views revealing interior mechanical features, clearance paths, and component interlocks.</li>
+                    </ul>
+
+                    <div class="formula-card">
+                        <div class="formula-title">ISO Hatching Conventions for Assemblies</div>
+                        <p class="formula-caption">
+                            Adjacent mating parts must be hatched at alternating $45^\circ$ angles or varying line spacing. Solid shafts, bolts, nuts, studs, pins, and keys are shown unsectioned when cut longitudinally.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Module 3 Section -->
+                <section id="module-3" class="lecture-section">
+                    <h2>1.2 Limits, Fits, and Engineering Tolerances</h2>
+                    <p>
+                        To ensure component interchangeability in mass production, dimensional tolerances define acceptable variations from nominal size.
+                    </p>
+
+                    <h3>Classification of Engineering Fits (ISO System)</h3>
+                    <ul>
+                        <li><strong>Clearance Fit:</strong> Always leaves a positive spatial gap between mating shaft and hole (e.g., rotating journal bearings).</li>
+                        <li><strong>Transition Fit:</strong> Hole and shaft tolerance zones overlap; fit may result in slight clearance or slight interference.</li>
+                        <li><strong>Interference Fit:</strong> Shaft is larger than hole prior to assembly, requiring thermal expansion or hydraulic press fit (e.g., bush bearings).</li>
+                    </ul>
+
+                    <div class="equation-block">
+                        $$\text{Fundamental Tolerance} = \text{Upper Limit Size} - \text{Lower Limit Size}$$
+                    </div>
+                </section>
+
+                <!-- Navigation Controls for Reader -->
+                <footer class="reading-footer">
+                    <a href="fluid-mechanics-1.html" class="btn btn-secondary">← Previous: MEC 122</a>
+                    <a href="../nd-index.html" class="btn btn-primary">ND Syllabus Directory →</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-engine.js"></script>
+</body>
+</html>
