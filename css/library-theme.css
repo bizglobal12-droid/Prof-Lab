@@ -161,3 +161,58 @@
         text-align: center;
     }
 }
+
+/* Formula Card Container */
+.formula-card {
+    background: #f8fafc;
+    border-left: 4px solid #0284c7;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.formula-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+}
+
+.formula-display {
+    font-size: 1.15rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.formula-caption {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+/* Standalone Equation Display Blocks */
+.equation-block {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.25rem 0;
+    text-align: center;
+    overflow-x: auto; /* Responsive horizontal scrollbar for ultra-wide equations */
+}
+
+/* Responsive MathJax Overrides */
+mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 0.75em 0 !important;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+mjx-container:focus {
+    outline: none !important;
+}
